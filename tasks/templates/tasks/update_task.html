@@ -1,0 +1,8 @@
+<h4> Update Task </h4>
+
+<form method="post" action="{% url 'update_task' task.id %}">
+    {% csrf_token %}
+    <div>
+    {{form}}
+    </div>  
+    <input type="submit" name="Update Task" placeholder="Update Task">
